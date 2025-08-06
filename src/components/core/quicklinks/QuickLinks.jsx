@@ -1,7 +1,7 @@
 import React, { useContext,useEffect, useState } from 'react';
 import { RiFunctionAddLine } from "react-icons/ri";
 import PopupMenu from '../../common/popups/PopupMenu';
-import QuickLInkForm from '../../common/popups/QuickLinkForm';
+import QuickLinkForm from '../../common/popups/QuickLinkForm';
 import QuickLinkCard from './QuickLinkCard';
 import EditQuickLinkForm from '../../common/popups/EditQuickLinkForm';
 import { ThemeContext } from '../layout/Layout';
@@ -143,7 +143,7 @@ useEffect(() => {
             {
                 showPopupMenu && (
                     <PopupMenu onClose={() => setShowPopupMenu(false)}>
-                        <QuickLInkForm
+                        <QuickLinkForm
                             onClose={() => setShowPopupMenu(false)}
                             onAddLink={addQuickLInk}
                         />

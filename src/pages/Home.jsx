@@ -3,7 +3,7 @@ import WebSearchForm from '../components/common/WebSearchForm/WebSearchForm';
 import { IoMdSettings } from "react-icons/io";
 import { CiLight, CiDark } from "react-icons/ci";
 import { ThemeContext } from "../components/core/layout/Layout.jsx";
-import QuickLInks from '../components/core/quicklinks/QuickLInks.jsx';
+import QuickLinks from '../components/core/quicklinks/QuickLinks.jsx';
 import PopupMenu from '../components/common/popups/PopupMenu.jsx';
 import HomePageSettingsBox from '../components/common/popups/HomePageSettingsBox.jsx';
 
@@ -70,7 +70,7 @@ const Home = () => {
         <WebSearchForm />
         {getSettingStatus("Show Quick Links") && (
           <div className='grid place-items-center mt-4 w-full'>
-            <QuickLInks />
+            <QuickLinks />
           </div>
         )}
       </section>
