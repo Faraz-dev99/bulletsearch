@@ -11,10 +11,11 @@ const PopupMenu = ({children, onClose}) => {
     return (
         <div 
         onClick={handleBackdropClick}
-        className={` fixed z-50 top-0 left-0 px-0.5 backdrop-blur-sm h-screen w-screen grid place-items-center ${toggleThemeMode=="dark"?"bg-gray-950/50":"bg-gray-300/50"}  `}
+        className={` fixed z-50 top-0 left-0 px-0.5 backdrop-blur-sm w-screen grid place-items-center ${toggleThemeMode=="dark"?"bg-gray-950/50":"bg-gray-300/50"}  `}
+        style={{ height: '100dvh' }}
         >
-            <div className={` w-full border-[0.1px] ${toggleThemeMode=="dark"?"border-gray-700/50":"border-gray-300/30"} max-w-[400px] ${toggleThemeMode=="dark"?"bg-gray-900 text-gray-200":"bg-gray-300 text-gray-900"}  p-6 rounded-xl shadow-lg `}>
-                    {children}
+            <div className={` w-full border-[0.1px] ${toggleThemeMode=="dark"?"border-gray-700/50":"border-gray-300/30"} max-w-[400px] ${toggleThemeMode=="dark"?"bg-gray-900 text-gray-200":"bg-gray-200 text-gray-900"}  p-6 rounded-xl shadow-lg `}>
+                    {children}d
             </div>
         </div>
     )

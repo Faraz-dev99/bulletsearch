@@ -56,7 +56,7 @@ const Home = () => {
 
 
   return (
-    <div className='min-h-screen flex flex-col'>
+    <div className='min-h-screen flex flex-col' style={{ minHeight: '100dvh' }}>
       <header className='flex justify-between py-2 px-2'>
         <div />
         <div className='flex gap-1 md:gap-4 text-xl'>
