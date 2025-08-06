@@ -18,7 +18,7 @@ const ImagePreview = ({onClose,item}) => {
 
         
   return (
-    <div className="relative w-full max-w-3xl mx-auto bg-gray-200 dark:bg-gray-900 rounded-lg overflow-hidden">
+    <div className="relative w-full max-w-3xl mx-auto bg-gray-300 dark:bg-gray-900 rounded-lg overflow-hidden">
 
       {/* Video Iframe */}
       

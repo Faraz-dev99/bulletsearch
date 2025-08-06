@@ -3,7 +3,7 @@ import { IoMdClose } from "react-icons/io";
 
 const VideoPreview = ({ onClose, video, videoLink, videoTitle, videoDesc }) => {
   return (
-    <div className="relative w-full max-w-3xl mx-auto bg-gray-200 dark:bg-gray-900 rounded-lg  overflow-hidden">
+    <div className="relative w-full max-w-3xl mx-auto bg-gray-300 dark:bg-gray-900 rounded-lg  overflow-hidden">
 
       {/* Video Iframe */}
       <div className="w-full aspect-video bg-black">
@@ -28,7 +28,7 @@ const VideoPreview = ({ onClose, video, videoLink, videoTitle, videoDesc }) => {
         <div className='flex items-center justify-between gap-4 mt-8'>
         <button
           type='button'
-          className="dark:bg-gray-600 w-full dark:hover:bg-gray-600/80 text-sm bg-gray-300 hover:bg-gray-100 py-2 px-3 rounded-md cursor-pointer transition"
+          className="dark:bg-gray-600 w-full dark:hover:bg-gray-600/80 text-sm bg-gray-200 hover:bg-gray-100 py-2 px-3 rounded-md cursor-pointer transition"
           onClick={onClose}
         >
           Cancel
