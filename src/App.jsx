@@ -7,6 +7,7 @@ import Layout from './components/core/layout/Layout'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import Home from './pages/Home'
 import Results from './pages/Results'
+import Weather from './pages/Weather'
 
 const router=createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router=createBrowserRouter([
       {
         path:'/results',
         element:<Results />
+      },
+      {
+        path:'/weather',
+        element:<Weather />
       }
 
     ]

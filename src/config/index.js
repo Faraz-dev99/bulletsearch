@@ -12,3 +12,4 @@ export const YOUTUBE_CREDIDENTIAL=[
     import.meta.env.VITE_YOUTUBEAPI_KEY1
 ]
 
+export const WEATHERAPI_KEY=import.meta.env.VITE_WEATHERAPI_KEY
